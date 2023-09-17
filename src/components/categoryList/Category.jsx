@@ -7,7 +7,7 @@
 
         return (
             <Link href={`/blog?cat=` + cat} className={`${styles.category} ${style}`}>
-                <Image src={`/` + imgsrc} alt="" width={32} height={32} className={styles.image} />
+                <Image src={imgsrc} alt="" width={32} height={32} className={styles.image} />
                 {cat}
             </Link>
         )
