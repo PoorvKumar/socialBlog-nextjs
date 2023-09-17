@@ -17,7 +17,7 @@ function AuthLinks() {
         <Link href="/login" className={styles.link}>Login</Link>
       ) : (
         <>
-          <Link href="/write" className={styles.link}>Write</Link>
+          <Link href="/create" className={styles.link}>Write</Link>
           <span className={styles.link} onClick={signOut}>Logout</span>
         </>
       )}
@@ -35,7 +35,7 @@ function AuthLinks() {
             <Link href="/login">Login</Link>
           ) : (
             <>
-              <Link href="/write">Write</Link>
+              <Link href="/create">Write</Link>
               <span className={styles.link} onClick={signOut}>Logout</span>
             </>
           )}
