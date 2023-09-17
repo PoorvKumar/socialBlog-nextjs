@@ -32,9 +32,9 @@ const WritePage = () => {
         );
     }
 
-    if(status==="authenticated")
+    if(status==="unauthenticated")
     {
-        router.push("/");
+        router.push("/login");
     }
 
     return (
