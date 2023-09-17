@@ -43,7 +43,7 @@ const Comments = () => {
             </div>
             <div className={styles.comment}>
                 <div className={styles.user}>
-                    <Image src="/p1.jpeg" className={styles.image} width={50} height={50}/>
+                    <Image src="/p1.jpeg" alt='' className={styles.image} width={50} height={50}/>
                     <div className={styles.userInfo}>
                         <span className={styles.username}>John Doe</span>
                         <span className={styles.date}>01.08.2023</span>
@@ -53,7 +53,7 @@ const Comments = () => {
             </div>
             <div className={styles.comment}>
                 <div className={styles.user}>
-                    <Image src="/p1.jpeg" className={styles.image} width={50} height={50}/>
+                    <Image src="/p1.jpeg" alt='' className={styles.image} width={50} height={50}/>
                     <div className={styles.userInfo}>
                         <span className={styles.username}>John Doe</span>
                         <span className={styles.date}>01.08.2023</span>
