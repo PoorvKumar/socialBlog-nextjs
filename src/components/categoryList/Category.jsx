@@ -3,11 +3,11 @@
     import React from 'react';
     import styles from "./categoryList.module.css";
 
-    const Category = ({ cat, imgsrc, style }) => {
+    const Category = ({ key, cat, imgsrc, style }) => {
 
         return (
-            <Link href={`/blog?cat=` + cat} className={`${styles.category} ${style}`}>
-                <Image src={imgsrc} alt="" width={32} height={32} className={styles.image} />
+            <Link key={key} href={`/blog?cat=` + cat} className={`${styles.category} ${style}`}>
+                {imgsrc && <Image src={imgsrc} alt="" width={32} height={32} className={styles.image} />}
                 {cat}
             </Link>
         )

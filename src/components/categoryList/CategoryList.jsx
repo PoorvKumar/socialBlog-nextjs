@@ -7,7 +7,7 @@ import Category from './Category';
 const getData=async ()=>
 {
   const res=await fetch("http://localhost:3000/api/categories",{
-    cache: "no-store",
+    // cache: "no-store",
   });
 
   if(!res.ok)
@@ -28,7 +28,7 @@ const CategoryList =async () => {
       <div className={styles.categories}>
         {data?.map((item)=>
         (
-          <Category cat={item.title} imgsrc={item.img} style={styles[item.slug]} key={item._id}/>
+          <Category key={item._id} cat={item.title} imgsrc={item.img} style={styles[item.slug]}/>
         ))}
         {/* <Category cat="style" imgsrc="/style.png" style={styles.style}/>
         <Category cat="fashion" imgsrc="/fashion.png" style={styles.fashion}/>
