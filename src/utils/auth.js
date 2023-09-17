@@ -1,9 +1,13 @@
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
-import TwitterProvider from "next-auth/providers/twitter";
+import Discord from "@auth/core/providers/discord";
 
-export const authOptions = {
-  // Configure one or more authentication providers
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import prisma from "./connect";
+
+export const authOptions = 
+{
+  adapter: PrismaAdapter(prisma),
   providers: [
     GoogleProvider({
     clientId: process.env.GOOGLE_CLIENT_ID,
@@ -13,9 +17,9 @@ export const authOptions = {
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
-    TwitterProvider({
-      clientId: process.env.TWITTER_CLIENT_ID,
-      clientSecret: process.env.TWITTER_CLIENT_SECRET,
+    Discord({
+      clientId: process.env.DISCORD_CLIENT_ID,
+      clientSecret: process.env.DISCORD_CLIENT_SECRET,
     }),
   ],
 };
