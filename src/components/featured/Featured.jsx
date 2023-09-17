@@ -7,7 +7,7 @@ const Featured = () => {
       <h1 className={styles.title}> <b>Unlock your hidden potential:</b> Where every post becomes a story!</h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
-          <Image src="/p1.jpeg" fill className={styles.image}/>
+          <Image src="/p1.jpeg" alt="" fill className={styles.image}/>
         </div>
         <div className={styles.textContainer}>
           <h1 className={styles.postTitle}>Lorem ipsum, dolor sit amet consectetur adipisicing elir!</h1>

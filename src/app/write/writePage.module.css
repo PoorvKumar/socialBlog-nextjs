@@ -1,0 +1,126 @@
+.container
+{
+    
+}
+
+.editor
+{
+    display: flex;
+    gap: 15px;
+    height: 700px;
+    position: relative;
+}
+
+.button,.addButton
+{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input
+{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--textColor);
+}
+
+.input::placeholder
+{
+    color: #b3b3b1;
+}
+
+.add
+{
+    display: flex;
+    gap: 20px;
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    left: 50px;
+}
+
+.addButton
+{
+    border-color: #1a8917;
+}
+
+.textArea
+{
+    width: 100%;
+    /* color: var(--textColor); */
+}
+
+.publish
+{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1180px) {
+    .publish
+    {
+        top: 150px;
+        right: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 1048px) {
+    .publish
+    {
+        top: 150px;
+        right: 40px;
+    }
+
+    .input
+    {
+        font-size: 48px;
+    }
+    
+    .textArea
+    {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .publish
+    {
+        position: relative;
+        top: 25px;
+        width: max-content;
+        margin: auto;
+        font-size: 16px;
+    }
+
+    .textArea
+    {
+        font-size: 16px !important;
+    }
+    
+}
