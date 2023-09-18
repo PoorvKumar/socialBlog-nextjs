@@ -26,16 +26,16 @@ const CategoryList =async () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Popular Category</h1>
       <div className={styles.categories}>
-        {data?.map((item)=>
+        {/* {data?.map((item)=>
         (
           <Category key={item._id} cat={item.title} imgsrc={item.img} style={styles[item.slug]}/>
-        ))}
-        {/* <Category cat="style" imgsrc="/style.png" style={styles.style}/>
+        ))} */}
+        <Category cat="style" imgsrc="/style.png" style={styles.style}/>
         <Category cat="fashion" imgsrc="/fashion.png" style={styles.fashion}/>
         <Category cat="food" imgsrc="/food.png" style={styles.food}/>
         <Category cat="travel" imgsrc="/travel.png" style={styles.travel}/>
         <Category cat="culture" imgsrc="/culture.png" style={styles.culture}/>
-        <Category cat="coding" imgsrc="/coding.png" style={styles.coding}/> */}
+        <Category cat="coding" imgsrc="/coding.png" style={styles.coding}/>
       </div>
     </div>
   )
