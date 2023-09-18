@@ -1,18 +1,27 @@
-.container
-{
-    
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
-.editor
-{
+.select {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    margin-left: 50px;
+    width: max-content;
+    background: var(--bg);
+    color: var(--textColor);
+}
+
+.editor {
     display: flex;
     gap: 15px;
     height: 700px;
     position: relative;
 }
 
-.button,.addButton
-{
+.button,
+.addButton {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -24,8 +33,7 @@
     cursor: pointer;
 }
 
-.input
-{
+.input {
     padding-top: 50px;
     padding-bottom: 20px;
     font-size: 64px;
@@ -35,13 +43,11 @@
     color: var(--textColor);
 }
 
-.input::placeholder
-{
+.input::placeholder {
     color: #b3b3b1;
 }
 
-.add
-{
+.add {
     display: flex;
     gap: 20px;
     background: transparent;
@@ -51,21 +57,18 @@
     left: 50px;
 }
 
-.addButton
-{
+.addButton {
     border-color: #1a8917;
 }
 
-.textArea
-{
+.textArea {
     width: 100%;
     /* color: var(--textColor); */
 }
 
-.publish
-{
+.publish {
     position: absolute;
-    top: 30px;
+    top: 80px;
     right: 20px;
     padding: 10px 20px;
     border: none;
@@ -73,44 +76,39 @@
     color: white;
     cursor: pointer;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1180px) {
-    .publish
-    {
-        top: 150px;
+    .publish {
+        top: 80px;
         right: 40px;
     }
-    
+
 }
 
 @media screen and (max-width: 1048px) {
-    .publish
-    {
-        top: 150px;
+    .publish {
+        top: 80px;
         right: 40px;
     }
 
-    .input
-    {
+    .input {
         font-size: 48px;
     }
-    
-    .textArea
-    {
+
+    .textArea {
         font-size: 20px !important;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .container
-    {
+    .container {
         display: flex;
         flex-direction: column;
     }
 
-    .publish
-    {
+    .publish {
         position: relative;
         top: 25px;
         width: max-content;
@@ -118,9 +116,8 @@
         font-size: 16px;
     }
 
-    .textArea
-    {
+    .textArea {
         font-size: 16px !important;
     }
-    
+
 }

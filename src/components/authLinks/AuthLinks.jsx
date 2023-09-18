@@ -28,9 +28,9 @@ function AuthLinks() {
       </div>
       {open && (
         <div className={styles.responsiveMenu}>
-          <Link href="/">Home</Link>
-          <Link href="/">Contact</Link>
-          <Link href="/">About</Link>
+          <Link href="/" onClick={()=>setOpen(!open)}>Home</Link>
+          <Link href="/" onClick={()=>setOpen(!open)}>Contact</Link>
+          <Link href="/" onClick={()=>setOpen(!open)}>About</Link>
           {status === "unauthenticated" ? (
             <Link href="/login">Login</Link>
           ) : (

@@ -13,10 +13,10 @@ const Footer = () => {
         </div>
         <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae odit atque reprehenderit harum vitae sit accusantium expedita veritatis quisquam!</p>
         <div className={styles.icons}>
-        <Image src="/youtube.png" alt='youtube' width={18} height={18}/>
-        <Image src="/twitter.png" alt='tiktok' width={18} height={18}/>
-        <Image src="/instagram.png" alt='instagram' width={18} height={18}/>
-        <Image src="/facebook.png" alt='facebook' width={18} height={18}/>
+        <Link href="/"><Image src="/youtube.png" alt='youtube' width={18} height={18}/></Link>
+        <Link href="/"><Image src="/twitter.png" alt='twitter' width={18} height={18}/></Link>
+        <Link href="/"><Image src="/instagram.png" alt='instagram' width={18} height={18}/></Link>
+        <Link href="/"><Image src="/facebook.png" alt='facebook' width={18} height={18}/></Link>
         </div>
       </div>
       <div className={styles.links}>
