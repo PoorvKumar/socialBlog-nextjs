@@ -8,19 +8,30 @@ export const GET=async (req)=>
 
     const POSTS_PER_PAGE=4;
     const page=parseInt(searchParams.get("page")) || 1;
+    const cat=searchParams.get("cat");
 
     let skip=POSTS_PER_PAGE*(page-1);
 
-    // let skip=0;
-    // if(page && /^\d+$/.test(page))
-    // {
-    //     skip=POSTS_PER_PAGE*(parseInt(page)-1);
-    // }
+    const query={
+        take: POSTS_PER_PAGE,
+        skip: skip,
+        where: 
+        {
+            ...(cat && { catSlug: cat })
+        }
+    };
 
     try
     {
-        const posts=await prisma.post.findMany({take: POSTS_PER_PAGE, skip: skip});
-        return new NextResponse(JSON.stringify(posts,{ status: 200 }));
+        const [posts,count]=await prisma.$transaction([
+            prisma.post.findMany(query),
+            prisma.post.count({
+                where: query.where
+            })
+        ])
+
+        // console.log(posts);
+        return new NextResponse(JSON.stringify({posts,count},{ status: 200 }));
     }
     catch(err)
     {
