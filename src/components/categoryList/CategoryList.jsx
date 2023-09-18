@@ -4,23 +4,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Category from './Category';
 
-const getData=async ()=>
-{
-  const res=await fetch("http://localhost:3000/api/categories",{
-    // cache: "no-store",
-  });
+// const getData=async ()=>
+// {
+//   const res=await fetch("http://127.0.0.1:3000/api/categories",{
+//     cache: "no-store",
+//   });
 
-  if(!res.ok)
-  {
-    throw new Error("Failed");
-  }
+//   if(!res.ok)
+//   {
+//     throw new Error("Failed");
+//   }
 
-  return res.json();
-}
+//   return res.json();
+// }
 
 const CategoryList =async () => {
 
-  const data=await getData();
+  // const data=await getData();
 
   return (
     <div className={styles.container}>
