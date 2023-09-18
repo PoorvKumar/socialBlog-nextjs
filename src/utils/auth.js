@@ -4,6 +4,7 @@ import Discord from "@auth/core/providers/discord";
 
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import prisma from "./connect";
+import { getServerSession } from "next-auth";
 
 export const authOptions = 
 {
@@ -23,3 +24,5 @@ export const authOptions =
     }),
   ],
 };
+
+export const getAuthSession=()=>getServerSession(authOptions);
