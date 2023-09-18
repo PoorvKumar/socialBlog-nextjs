@@ -3,10 +3,19 @@ import { NextResponse } from "next/server";
 
 export const GET=async (req)=>
 {
-    const {searchParams}=new URL(req.url);
-    const page=searchParams.get("page");
+    const { searchParams }=new URL(req.url);
+    // console.log(searchParams);
+
     const POSTS_PER_PAGE=4;
-    
+    const page=parseInt(searchParams.get("page")) || 1;
+
+    let skip=POSTS_PER_PAGE*(page-1);
+
+    // let skip=0;
+    // if(page && /^\d+$/.test(page))
+    // {
+    //     skip=POSTS_PER_PAGE*(parseInt(page)-1);
+    // }
 
     try
     {

@@ -6,6 +6,7 @@ import Menu from "@/components/menu/Menu";
 
 export default function Home({searchParams}) {
   
+  // console.log(searchParams);
   const page=parseInt(searchParams.page) || 1;
   // console.log(page);
 
