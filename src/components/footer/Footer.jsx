@@ -21,6 +21,13 @@ const Footer = () => {
       </div>
       <div className={styles.links}>
         <div className={styles.list}>
+          <span className={styles.listTitle}>Social</span>
+          <Link href="/">Github</Link>
+          <Link href="/">Linkedin</Link>
+          <Link href="/">Twitter</Link>
+          <Link href="/">socialBlog</Link>
+        </div>
+        <div className={styles.list}>
           <span className={styles.listTitle}>Links</span>
           <Link href="/">Home</Link>
           <Link href="/">Blog</Link>
@@ -33,13 +40,6 @@ const Footer = () => {
           <Link href="/">Fashion</Link>
           <Link href="/">Coding</Link>
           <Link href="/">Travel</Link>
-        </div>
-        <div className={styles.list}>
-          <span className={styles.listTitle}>Social</span>
-          <Link href="/">Youtube</Link>
-          <Link href="/">Twitter</Link>
-          <Link href="/">Instagram</Link>
-          <Link href="/">Facebook</Link>
         </div>
       </div>
     </div>

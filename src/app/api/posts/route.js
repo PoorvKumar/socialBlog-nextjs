@@ -7,7 +7,7 @@ export const GET=async (req)=>
     const { searchParams }=new URL(req.url);
     // console.log(searchParams);
 
-    const POSTS_PER_PAGE=4;
+    const POSTS_PER_PAGE=3;
     const page=parseInt(searchParams.get("page")) || 1;
     const cat=searchParams.get("cat");
 
