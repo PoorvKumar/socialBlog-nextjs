@@ -13,6 +13,16 @@ export const GET=async (req,{params})=>
             include: { user: true }
         });
 
+        if(!post)
+        {
+            return new NextResponse(JSON.stringify({message: "Post not found!!!"},{ status: 404 }));
+        }
+
+        await prisma.post.update({
+            where: { slug },
+            data: { views: { increment: 1 } }
+        });
+
         return new NextResponse(JSON.stringify(post,{status: 200}));
     }
     catch(err)
