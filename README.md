@@ -36,11 +36,11 @@ Some of the features of this app are listed below:
 - Pagination
 - Light/Dark Themes
 - Responsive Design
+- Most Popular posts based to views
 
 ## Features to be added:
 
-- Most Popular posts based to views
-- Shareable Links to posts which can be shared to 
+- Shareable Links to posts which can be shared to || social share
 - Make the post page more dynamic,
 - Dashboard for User to update/delete their posts
 - Animation when changing themes
