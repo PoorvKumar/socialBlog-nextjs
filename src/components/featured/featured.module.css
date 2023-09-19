@@ -62,7 +62,7 @@
 
 .button:hover
 {
-    box-shadow: var(--softTextColor) 0px 5px 15px -5px, var(--softTextColor) 0px 5px 15px -5px;
+    box-shadow: var(--softTextColor) 5px 5px 15px -5px, var(--softTextColor) 5px 5px 15px -5px;
 }
 
 @media screen and (max-width: 1280px) {
