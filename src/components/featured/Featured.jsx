@@ -14,7 +14,7 @@ const Featured = () => {
           <h1 className={styles.postTitle}>Transforming Every Post into a Captivating Story!</h1>
           <p className={styles.postDesc}>In the vast landscape of social media and online content, standing out has become increasingly challenging. In a sea of posts and updates, how can you make your voice heard, your message resonate, and your content truly memorable?</p>
           {/* <button className={styles.button}>Read More</button> */}
-          <Link href="/" className={styles.button}>Read More</Link>
+          <Link href="/posts/transforming-every-post-into-a-captivating-story" className={styles.button}>Read More</Link>
         </div>
       </div>
     </div>
