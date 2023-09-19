@@ -11,7 +11,7 @@ const Footer = () => {
           <Image src="/logo.jpg" alt="" width={50} height={50} style={{borderRadius: "50%"}}/>
           <h1 className={styles.logoText}>PoorvKumar</h1>
         </div>
-        <p className={styles.desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quae odit atque reprehenderit harum vitae sit accusantium expedita veritatis quisquam!</p>
+        <p className={styles.desc}>Join me on this journey of discovery and inspiration, as we share stories, thoughts, and ideas that unite our diverse community. Together, we shape the narratives that define our world.</p>
         <div className={styles.icons}>
         <Link href="/"><Image src="/youtube.png" alt='youtube' width={18} height={18}/></Link>
         <a href="https://twitter.com/PoorvKumar1" target='_blank'><Image src="/twitter.png" alt='twitter' width={18} height={18}/></a>
