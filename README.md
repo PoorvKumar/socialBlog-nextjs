@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a FullStack Blog application built in [Next.js](https://nextjs.org/) using [Prisma ORM](https://www.prisma.io/docs). 
+This project is deployed on vercel at [socialBlog](https://socialblog-alpha.vercel.app)
 
 ## Getting Started
 
-First, run the development server:
+First, install the necessary dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+yarn install
+```
+
+Second, run the development server:
+
+```bash
+yarn run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Next.js](https://nextjs.org/docs)
+- [Prisma](https://www.prisma.io/docs)
+- [NextAuth](https://authjs.dev/)
+- [Firebase](https://firebase.google.com/)
+- [ReactQuill](https://www.npmjs.com/package/react-quill)
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+Some of the features of this app are listed below:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- SignIn through Google, Github, Discord
+- Create, View Post
+- Add Comments to Posts
+- View Posts based on Category
+- Pagination
+- Light/Dark Themes
+- Responsive Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Features to be added:
 
-## Deploy on Vercel
+- Most Popular posts based to views
+- Shareable Links to posts which can be shared to 
+- Make the post page more dynamic,
+- Dashboard for User to update/delete their posts
+- Animation when changing themes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can check out [socialBlog GitHub repository](https://github.com/PoorvKumar/socialBlog-nextjs) - your feedback and contributions are welcome!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
