@@ -39,7 +39,7 @@ const MenuPosts = ({withImage}) => {
   return (
     <div className={styles.items}>
         {data?.map((item)=> (
-          <Link href={"/"} className={styles.item} key={item._id}>
+          <Link href={`/posts/${item.slug}`} className={styles.item} key={item._id}>
           {withImage && <div className={styles.imageContainer}>
             <Image src={item.user.image} alt="" fill className={styles.image}/>
           </div>}
