@@ -45,7 +45,7 @@ Some of the features of this app are listed below:
 - Dashboard for User to update/delete their posts
 - Animation when changing themes
 
-[ER diagram](https://app.eraser.io/workspace/vJwL6qAz5Y1y7PGROyZ7?origin=share)
+[Class Diagram](https://app.eraser.io/workspace/vJwL6qAz5Y1y7PGROyZ7?origin=share)
 
 You can check out [socialBlog GitHub repository](https://github.com/PoorvKumar/socialBlog-nextjs) - your feedback and contributions are welcome!
 
